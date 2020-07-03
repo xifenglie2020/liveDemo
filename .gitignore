@@ -1,6 +1,12 @@
 # Prerequisites
 *.d
 
+/debug/
+/release/
+/objects/
+*.ncb
+*.sdf
+
 # Compiled Object files
 *.slo
 *.lo
@@ -23,8 +29,6 @@
 # Compiled Static libraries
 *.lai
 *.la
-*.a
-*.lib
 
 # Executables
 *.exe

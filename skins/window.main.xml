@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1024,708" sizebox="6,6,6,6" caption="0,0,0,56" mininfo="640,480" roundcorner="5,5">
+	<Default shared="true" name="Text" value="textcolor=&quot;#FFFFFFFF&quot; " />
+  <Font shared="true" id="0" name="宋体" size="16" bold="false" italic="false" default="true" />
+	<Default shared="true" name="CheckBox" value="textcolor=&quot;#FFFFFFFF&quot; hottextcolor=&quot;#FFFFFFFF&quot; selectedtextcolor=&quot;#FFFFFFFF&quot; disabledtextcolor=&quot;#FFFFFFFF&quot; textpadding=&quot;24,2,0,2&quot; align=&quot;left&quot; selectedimage=&quot;file='btn_checked.png' dest='0,4,24,28'&quot; normalimage=&quot;file='btn_unchecked.png' dest='0,4,24,28'&quot;" />
+  <Default shared="true" name="Button" value="textcolor=&quot;#FF000000&quot; hottextcolor=&quot;#FF000000&quot; focusedtextcolor=&quot;#FF000000&quot; pushedtextcolor=&quot;#FF77a8de&quot; normalimage=&quot;file=&apos;btn_default.png&apos; corner=&apos;5,11,5,11&apos; source=&apos;0,0,64,24&apos;&quot; hotimage=&quot;file=&apos;btn_default.png&apos; corner=&apos;5,11,5,11&apos; source=&apos;0,24,64,48&apos;&quot; pushedimage=&quot;file=&apos;btn_default&apos; corner=&apos;5,11,5,11&apos; source=&apos;0,48,64,72&apos;&quot; disabledimage=&quot;file=&apos;btn_default.png&apos; corner=&apos;5,11,5,11&apos; source=&apos;0,72,64,96&apos;&quot;" />
+  <VerticalLayout bkcolor="#FF434343" bkcolor2="#FF434343" inset="4,4,4,4" >
+		<HorizontalLayout name="window.title" height="30">
+			<HorizontalLayout width="128">
+				<Text name="title.name" text="liangui plat" textpadding="2,2,2,2"/> 
+			</HorizontalLayout>
+			<HorizontalLayout />
+			<HorizontalLayout width="120">
+				<Button name="title.btn.min" width="30" align="center" normalimage="file=&apos;btn_sys_min.png&apos; source=&apos;0,0,30,30&apos;" hotimage="file=&apos;btn_sys_min.png&apos; source=&apos;30,0,60,30&apos;" pushedimage="file=&apos;btn_sys_min.png&apos; source=&apos;60,0,90,30&apos;" />
+				<Button name="title.btn.max" width="30" align="center" normalimage="file=&apos;btn_sys_max.png&apos; source=&apos;0,0,30,30&apos;" hotimage="file=&apos;btn_sys_max.png&apos; source=&apos;30,0,60,30&apos;" pushedimage="file=&apos;btn_sys_max.png&apos; source=&apos;60,0,90,30&apos;" />
+				<Button name="title.btn.restore" visible="false" width="30" align="center" normalimage="file=&apos;btn_sys_restore.png&apos; source=&apos;0,0,30,30&apos;" hotimage="file=&apos;btn_sys_restore.png&apos; source=&apos;30,0,60,30&apos;" pushedimage="file=&apos;btn_sys_restore.png&apos; source=&apos;60,0,90,30&apos;" />
+				<Button name="title.btn.close" borderround="5,5" width="60" align="center" normalimage="file=&apos;btn_sys_close.png&apos; source=&apos;0,0,60,30&apos;" hotimage="file=&apos;btn_sys_close.png&apos; source=&apos;60,0,120,30&apos;" pushedimage="file=&apos;btn_sys_close.png&apos; source=&apos;120,0,180,30&apos;" />
+			</HorizontalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout name="window.body">
+			<VerticalLayout />
+			<VerticalLayout width="360" childpadding="10">
+				<HorizontalLayout />
+				<HorizontalLayout height="30" childpadding="16">
+					<Text text="ip地址" width="120" align="right" textpadding="2,4,2,2"/> 
+					<Edit name="login.ip" text="127.0.0.1" width="220" height="28" textpadding="2,2,2,2"/> 
+				</HorizontalLayout>	
+				<HorizontalLayout height="30" childpadding="16">
+					<Text text="端口" width="120" align="right" textpadding="2,4,2,2"/> 
+					<Edit name="login.port" text="8000" width="220" height="28" textpadding="2,2,2,2"/> 
+				</HorizontalLayout>	
+				<HorizontalLayout height="30" childpadding="16">
+					<Text text="用户名" width="120" align="right" textpadding="2,4,2,2"/> 
+					<Edit name="login.user" text="" width="220" height="28" textpadding="2,2,2,2"/> 
+				</HorizontalLayout>	
+				<HorizontalLayout height="30" childpadding="16">
+					<Text text="密码" width="120" align="right" textpadding="2,4,2,2"/> 
+					<Edit name="login.pswd" text="" width="220" height="28" textpadding="2,2,2,2"/> 
+				</HorizontalLayout>	
+				<HorizontalLayout height="30" childpadding="16">
+					<Control width="64" />
+       		<CheckBox name="login.publisher" text="发布"  width="64" selected="false" />
+       		<CheckBox name="capture.file" text="文件源(xtfile.conf配置)"  width="180" selected="false" />
+				</HorizontalLayout>					
+				<HorizontalLayout height="30" childpadding="16">
+					<Control width="64" />
+       		<CheckBox name="network.tcp" text="采用TCP传输(默认UDP)"  width="240" selected="false" />
+				</HorizontalLayout>					
+				<HorizontalLayout height="30" childpadding="16">
+					<Control width="64" />
+					<HorizontalLayout />
+         	<Button name="btn.login" text="登录" borderround="5,5" width="120" align="center" />
+					<HorizontalLayout />
+				</HorizontalLayout>					
+				<HorizontalLayout />
+			</VerticalLayout>
+			<VerticalLayout />
+		</HorizontalLayout>
+  </VerticalLayout>
+</Window>
